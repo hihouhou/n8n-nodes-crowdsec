@@ -1,0 +1,53 @@
+{
+	"name": "n8n-nodes-crowdsec",
+	"version": "0.1.0",
+	"description": "n8n community nodes for CrowdSec: Local API (LAPI) alerts & decisions, and Console Service API blocklists & decisions",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"keywords": [
+		"n8n-community-node",
+		"crowdsec",
+		"security",
+		"firewall",
+		"ban",
+		"blocklist"
+	],
+	"license": "MIT",
+	"homepage": "https://github.com/nicolasgermain/n8n-nodes-crowdsec",
+	"author": {
+		"name": "Nicolas GERMAIN"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/nicolasgermain/n8n-nodes-crowdsec.git"
+	},
+	"files": [
+		"dist/**/*"
+	],
+	"engines": {
+		"node": ">=18"
+	},
+	"scripts": {
+		"copy:icons": "copyfiles -u 1 \"nodes/**/*.svg\" dist/nodes",
+		"build": "npm run copy:icons && tsc",
+		"lint": "tsc --noEmit"
+	},
+	"devDependencies": {
+		"@types/node": "^18.19.0",
+		"copyfiles": "^2.4.1",
+		"n8n-workflow": "^1.55.0",
+		"typescript": "^5.3.3"
+	},
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"credentials": [
+			"dist/credentials/CrowdSecLapiBouncerApi.credentials.js",
+			"dist/credentials/CrowdSecLapiMachineApi.credentials.js",
+			"dist/credentials/CrowdSecConsoleApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/CrowdSecLapi/CrowdSecLapi.node.js",
+			"dist/nodes/CrowdSecConsole/CrowdSecConsole.node.js"
+		]
+	}
+}

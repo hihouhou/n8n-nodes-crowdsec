@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72" role="img" aria-label="CrowdSec">
+	<defs>
+		<linearGradient id="cs-shield" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0" stop-color="#173a5e"/>
+			<stop offset="1" stop-color="#0d2438"/>
+		</linearGradient>
+	</defs>
+	<path fill="url(#cs-shield)" stroke="#00b3a4" stroke-width="2" d="M36 6 L60 14 V36 C60 52 50 61 36 66 C22 61 12 52 12 36 V14 Z"/>
+	<path fill="none" stroke="#00b3a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M26 36 L33 43 L47 29"/>
+	<text x="36" y="57" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="bold" fill="#00b3a4" text-anchor="middle">CS</text>
+</svg>

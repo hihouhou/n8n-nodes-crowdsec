@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"target": "es2019",
+		"lib": ["es2019", "es2020.promise"],
+		"outDir": "./dist",
+		"rootDir": "./",
+		"removeComments": true,
+		"sourceMap": false,
+		"declaration": true,
+		"strict": false,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true
+	},
+	"include": ["credentials/**/*", "nodes/**/*", "index.ts"],
+	"exclude": ["node_modules", "dist"]
+}
